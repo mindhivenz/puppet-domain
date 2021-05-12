@@ -1,0 +1,11 @@
+---
+spec/spec_helper.rb:
+  mock_with: ':rspec’
+.gitignore:
+  required:
+    - '---/.idea/'
+    - '---*.iml'
+.pdkignore:
+  paths:
+    - '/.idea/'
+    - '*.iml'
