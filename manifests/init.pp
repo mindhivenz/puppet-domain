@@ -6,8 +6,4 @@
 class domain (
   $customer = if $trusted[domain] =~ /^([^.]+)\.([^.]+)\.lan$/ { $2 },
   $site     = if $trusted[domain] =~ /^([^.]+)\.([^.]+)\.lan$/ { $1 },
-) {
-  if !$customer or !$site {
-    fail("Could not parse from (trusted) domain ${$trusted[domain]}, params must be provided explicitly")
-  }
-}
+) {}

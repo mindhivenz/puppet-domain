@@ -26,7 +26,7 @@ describe 'domain' do
   context 'invalid domain' do
     let(:node) { 'wrong.parse' }
 
-    it { is_expected.to compile.with_all_deps.and_raise_error(/Evaluation Error/) }
+    it { is_expected.to contain_class('domain').with({ 'customer' => nil, 'site' => nil }) }
   end
 
 end
