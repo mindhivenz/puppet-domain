@@ -4,7 +4,9 @@
   "author": "damon@mindhive.co.nz",
   "summary": "",
   "license": "MIT",
-  "source": "",
+  "source": "https://github.com/mindhivenz/puppet-domain.git",
+  "project_page": "https://github.com/mindhivenz/puppet-domain",
+  "issues_url": "https://github.com/mindhivenz/puppet-domain/issues",
   "dependencies": [
 
   ],
