@@ -1,6 +1,6 @@
-function domain::customer() >> Optional[String] {
+function domain::site() >> Optional[String] {
   if $trusted[domain] =~ /^([^.]+)\.([^.]+)\.lan$/ {
-    $2
+    $1
   } else {
     undef
   }
