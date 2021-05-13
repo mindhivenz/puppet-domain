@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 describe 'domain::customer' do
-
   context 'valid domain' do
     let(:node) { 'node.some-site.some-customer.lan' }
 
@@ -15,5 +14,4 @@ describe 'domain::customer' do
 
     it { is_expected.to run.and_return(nil) }
   end
-
 end
