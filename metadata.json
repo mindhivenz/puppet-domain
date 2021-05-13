@@ -2,7 +2,7 @@
   "name": "mindhive-domain",
   "version": "1.0.0",
   "author": "damon@mindhive.co.nz",
-  "summary": "",
+  "summary": "Domain name parsing",
   "license": "MIT",
   "source": "https://github.com/mindhivenz/puppet-domain.git",
   "project_page": "https://github.com/mindhivenz/puppet-domain",
