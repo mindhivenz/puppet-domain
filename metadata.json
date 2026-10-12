@@ -1,31 +1,28 @@
 {
   "name": "mindhive-domain",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "damon@mindhive.co.nz",
-  "summary": "Domain name parsing",
+  "summary": "Parses customer and site from the node's domain name",
   "license": "MIT",
-  "source": "https://github.com/mindhivenz/puppet-domain.git",
+  "source": "https://github.com/mindhivenz/puppet-domain",
   "project_page": "https://github.com/mindhivenz/puppet-domain",
   "issues_url": "https://github.com/mindhivenz/puppet-domain/issues",
-  "dependencies": [
-
-  ],
+  "dependencies": [],
   "operatingsystem_support": [
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "18.04",
-        "20.04"
+        "20.04",
+        "22.04",
+        "24.04"
       ]
     }
   ],
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 5.0.0 < 8.0.0"
+      "version_requirement": ">= 7.0.0 < 9.0.0"
     }
   ],
-  "pdk-version": "2.1.0",
-  "template-url": "pdk-default#2.1.0",
-  "template-ref": "tags/2.1.0-0-ga675ea5"
+  "tags": []
 }

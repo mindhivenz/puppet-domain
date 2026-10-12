@@ -6,32 +6,37 @@
 
 ### Functions
 
-* [`domain::customer`](#domaincustomer)
-* [`domain::site`](#domainsite)
+#### Public Functions
+
+* [`domain::customer`](#domain--customer): Reads the customer from the trusted domain `<site>.<customer>.lan`.
+* [`domain::site`](#domain--site): Reads the site from the trusted domain `<site>.<customer>.lan`.
+
+#### Private Functions
+
+* `domain::labels`: Splits the trusted domain `<site>.<customer>.lan` into its labels.
 
 ## Functions
 
-### <a name="domaincustomer"></a>`domain::customer`
+### <a name="domain--customer"></a>`domain::customer`
 
 Type: Puppet Language
 
-The domain::customer function.
+Reads the customer from the trusted domain `<site>.<customer>.lan`.
 
 #### `domain::customer()`
 
-The domain::customer function.
+Reads the customer from the trusted domain `<site>.<customer>.lan`.
 
-Returns: `Optional[String]`
+Returns: `Optional[String]` The customer, or undef for a certname outside the convention
 
-### <a name="domainsite"></a>`domain::site`
+### <a name="domain--site"></a>`domain::site`
 
 Type: Puppet Language
 
-The domain::site function.
+Reads the site from the trusted domain `<site>.<customer>.lan`.
 
 #### `domain::site()`
 
-The domain::site function.
+Reads the site from the trusted domain `<site>.<customer>.lan`.
 
-Returns: `Optional[String]`
-
+Returns: `Optional[String]` The site, or undef for a certname outside the convention

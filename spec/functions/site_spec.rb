@@ -3,15 +3,11 @@
 require 'spec_helper'
 
 describe 'domain::site' do
-  context 'valid domain' do
+  context 'with a certname in the customer domain convention' do
     let(:node) { 'node.some-site.some-customer.lan' }
 
-    it { is_expected.to run.and_return('some-site') }
+    it { is_expected.to run.with_params.and_return('some-site') }
   end
 
-  context 'invalid domain' do
-    let(:node) { 'wrong.parse' }
-
-    it { is_expected.to run.and_return(nil) }
-  end
+  it_behaves_like 'undef outside the domain convention'
 end
